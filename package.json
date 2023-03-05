@@ -18,6 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "eslint . --ext .ts --ext .tsx --fix",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -27,11 +28,6 @@
       "react-app",
       "react-app/jest"
     ]
-  },
-  "prettier": {
-    "singleQuote": true,
-    "tabWidth": 4,
-    "printWidth": 160
   },
   "browserslist": {
     "production": [
@@ -46,10 +42,12 @@
     ]
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-prettier": "^4.2.1",
