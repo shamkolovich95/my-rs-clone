@@ -10,7 +10,6 @@
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended"
     ],
-    "overrides": [],
     "parserOptions": {
         "parser": "@babel/eslint-parser",
         "requireConfigFile": false,
@@ -27,7 +26,6 @@
     },
     "plugins": [
         "react",
-        "prettier",
         "import",
         "@typescript-eslint"
     ],
@@ -66,5 +64,10 @@
         ],
         "no-console": "error",
         "@typescript-eslint/no-explicit-any": 2
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
     }
 }

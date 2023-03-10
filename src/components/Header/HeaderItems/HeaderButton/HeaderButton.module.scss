@@ -1,0 +1,12 @@
+@import '../../../../styles/variables.scss';
+
+.header__button {
+    grid-column: -2 / -1;
+    padding: 10px 30px;
+    border-radius: 15px;
+    background-color: $bgBlack;
+    color: white;
+    transition: $standardTransition;
+    @include hoverColorSingIn;
+    white-space: nowrap;
+}

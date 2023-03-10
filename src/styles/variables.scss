@@ -1,0 +1,27 @@
+$bgGrey: #f4f4f4;
+$borderGrey: 1px solid #ccc;
+$standardTransition: 0.2s;
+$bgBlack: #161616;
+$bgYellow: #ffe5a1;
+
+@mixin hoverColorSearch {
+    button {
+        &:hover {
+            opacity: 1;
+            transition: $standardTransition;
+        }
+    }
+
+    &:focus-within {
+        border-color: $bgYellow;
+        transition: $standardTransition;
+    }
+}
+
+@mixin hoverColorSingIn {
+    &:hover {
+        color: $bgBlack;
+        background-color: $bgYellow;
+        transition: 0.3s;
+    }
+}
