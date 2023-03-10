@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+.footer {
+    background-color: $bgYellow;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__school {
+        display: inline-block;
+        width: 100px;
+        height: 44px;
+        background: url('../../assets/images/rsschool-logo.svg') center no-repeat;
+        background-size: cover;
+    }
+}
